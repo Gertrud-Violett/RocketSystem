@@ -10,6 +10,7 @@ Run after FlightCalcPolar to create 3D trajctory plot.
 python RunTrajectoryPlotter_polar.py "result filename.csv"
 >>
 ```
+![output1](https://user-images.githubusercontent.com/96937287/158642949-8f863e62-efaf-47c3-8ca8-49ae87976259.png)
 
 ### FlightCalcPolar.py
 Main Calculation script. Results output to filename.csv based on input from settings.toml 
@@ -40,10 +41,47 @@ python FlightCalcPolar.py
 
 5000    499.9  6339.471606  1957.668819  4.062680e-13  ...   0.000000  1.000000e+05  263830.016153    7987.184431
 ```
+![Study N_90 E_0_plot](https://user-images.githubusercontent.com/96937287/158643120-e0c20ddf-f21f-4745-9fb4-12f9af693b5e.jpg)
+![Study N_90 E_0_Trajectory2D](https://user-images.githubusercontent.com/96937287/158643153-4560d1e4-2633-4023-8a36-e4877d8737fa.jpg)
 
 
 ### settings.toml
-Setting file for Main Calculation
+Setting file for Main Calculation. Create new table for each stage
+<span style="color: blue; ">
+[ENGINE]
+  [ENGINE.Stage1]
+    Throat_Dia = float
+    Isp_efficiency = float
+    Combustion_pressure = float
+    Nozzle_ExpansionRatio = float
+    OF_mixture = float
+    Target_thrust = float
+    Engine_qty = int
+
+  [ENGINE.Stage2]
+
+[VEHICLE]
+  [VEHICLE.StageX]
+    Structural_Efficiency = 0.96
+    Initial_Weight = 4000000.0
+    Fuel_Remaining = 0.1
+    Fuselage_Dia = 9.0
+
+[ENVIRONMENT]
+  gravity = 9.80665
+  barometric_pressure = 0.1013
+
+[VECTOR]
+  Latitude = 0.0
+  Longitude = 0.0
+  altitude = 0.0
+  radius=6371000
+
+[CALC_SETTING]
+  Casename = "Demo_run"
+  timestep = 0.1
+  timelimit = 500
+</span>
 
 #### attitude_beta.csv
 beta (phi) thrust angle history file. Enter thrust angle relative to longitudinal direction.(0deg=vertical, 90deg=horizontal to ground)
