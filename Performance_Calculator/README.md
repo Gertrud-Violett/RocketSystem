@@ -8,7 +8,8 @@ python RunTrajectoryPlotter_polar.py "result filename.csv"
 >>
 ```
 
-https://user-images.githubusercontent.com/96937287/158642949-8f863e62-efaf-47c3-8ca8-49ae87976259.png
+![output1](https://user-images.githubusercontent.com/96937287/158642949-8f863e62-efaf-47c3-8ca8-49ae87976259.png)
+
 
 ## FlightCalcPolar.py
 Main Calculation script. Results output to filename.csv based on input from settings.toml 
@@ -40,8 +41,10 @@ python FlightCalcPolar.py
 5000    499.9  6339.471606  1957.668819  4.062680e-13  ...   0.000000  1.000000e+05  263830.016153    7987.184431
 ```
 
-https://user-images.githubusercontent.com/96937287/158643120-e0c20ddf-f21f-4745-9fb4-12f9af693b5e.jpg
-https://user-images.githubusercontent.com/96937287/158643153-4560d1e4-2633-4023-8a36-e4877d8737fa.jpg
+![Study N_90 E_0_plot](https://user-images.githubusercontent.com/96937287/158643120-e0c20ddf-f21f-4745-9fb4-12f9af693b5e.jpg)
+![Study N_90 E_0_Trajectory2D](https://user-images.githubusercontent.com/96937287/158643153-4560d1e4-2633-4023-8a36-e4877d8737fa.jpg)
+
+
 
 ## settings.toml
 Setting file for Main Calculation
