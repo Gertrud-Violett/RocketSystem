@@ -1,0 +1,59 @@
+#Setting file for FlightCalcPolar.py
+#Engine Specs: Isp_efficiency:equilibrium total Isp eff., Target_thrust: any value, anticipated thrust, Engine_qty: qty of engines on stage
+[ENGINE]
+  [ENGINE.Stage1]
+    Throat_Dia = 0.215
+    Isp_efficiency = 0.98
+    Combustion_pressure = 33.0
+    Nozzle_ExpansionRatio = 34.0
+    OF_mixture = 3.7
+    Target_thrust = 2410
+    Engine_qty = 31
+  
+  [ENGINE.Stage2]
+    Throat_Dia = 0.2
+    Isp_efficiency = 0.97
+    Combustion_pressure = 33.0
+    Nozzle_ExpansionRatio = 150.0
+    OF_mixture = 3.8
+    Target_thrust = 2500
+    Engine_qty = 6
+
+#Vehicle Specs: fuel_remain: fuel left in tank for landing burn, fuselage_dia: diameter of stage
+[VEHICLE]
+  [VEHICLE.Stage1]
+    Structural_Efficiency = 0.96
+    Initial_Weight = 4000000.0
+    Fuel_Remaining = 0.1
+    Fuselage_Dia = 9.0
+  
+  [VEHICLE.Stage2]
+    Structural_Efficiency = 0.94
+    Initial_Weight = 1000000.0
+    Fuel_Remaining = 0.1
+    Fuselage_Dia = 9.0
+  
+  [VEHICLE.Payload]
+    Weight = 100000.0
+    Fuselage_Dia = 1.0
+
+#Environment Settings: gravity constant and Pressure MPa at Sea Level
+[ENVIRONMENT]
+  #Recommend do not edit
+  gravity = 9.80665
+  barometric_pressure = 0.1013
+
+#Initial Vector
+[VECTOR]
+  #Initial Latitude,Longitude and altitude. Do not edit radius of Earth
+  Latitude = 0.0
+  Longitude = 0.0
+  altitude = 0.0
+  #Recommend do not edit
+  radius=6371000
+
+#Calculation Settings: name, timestep, calc break time: recommended: 0.1~0.01s
+[CALC_SETTING]
+  Casename = "Demo_run"
+  timestep = 0.1
+  timelimit = 500
