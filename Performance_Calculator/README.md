@@ -3,6 +3,7 @@ Simple 3DoF trajctory simulation tool to study Rocket vehicle launch capability.
 
 ## RunTrajectoryPlotter_polar.py
 Run after FlightCalcPolar to create 3D trajctory plot.
+created based on original plotting tool: https://github.com/bluedack-space/TrajectoryPlotter
 ```bash
 python RunTrajectoryPlotter_polar.py "result filename.csv"
 >>
