@@ -1,7 +1,7 @@
 # RocketSystem
 Rocket System Calculation Tools
 
-## DIR<Performance Calculator>
+## DIR:Performance Calculator
 Simple 3DoF trajctory simulation tool to study Rocket vehicle launch capability.
 
 ### RunTrajectoryPlotter_polar.py
@@ -87,5 +87,5 @@ earth shoreline plotting file. do not edit
 
 
 ### result files:
-#### DIR<plot>
+#### DIR:plot
 Save directory for results
