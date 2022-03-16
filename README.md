@@ -47,7 +47,8 @@ python FlightCalcPolar.py
 
 ### settings.toml
 Setting file for Main Calculation. Create new table for each stage
-<span style="color: blue; ">
+
+```bash
 [ENGINE]
   [ENGINE.Stage1]
     Throat_Dia = float
@@ -81,12 +82,13 @@ Setting file for Main Calculation. Create new table for each stage
   Casename = "Demo_run"
   timestep = 0.1
   timelimit = 500
-</span>
+```
 
-#### attitude_beta.csv
+
+### attitude_beta.csv
 beta (phi) thrust angle history file. Enter thrust angle relative to longitudinal direction.(0deg=vertical, 90deg=horizontal to ground)
 
-#### attitude_gamma.csv
+### attitude_gamma.csv
 gamma (theta) thrust angle history file. Enter thrust angle relative to latitudinal direction.(0deg=vertical, 90deg=horizontal to ground)
 
 ### USSTDATM.py
@@ -114,16 +116,16 @@ python vehicle.py
 ```
 
 ### others
-#### PandasHandler.py
+### PandasHandler.py
 plotting subroutine forked from bluedack https://github.com/bluedack-space/TrajectoryPlotter
 
-#### TrajectoryPlotter.py
+### TrajectoryPlotter.py
 plotting subroutine forked from bluedack https://github.com/bluedack-space/TrajectoryPlotter
 
-#### earth.xlsx
+### earth.xlsx
 earth shoreline plotting file. do not edit
 
 
 ### result files:
-#### DIR:plot
+### DIR:plot
 Save directory for results
