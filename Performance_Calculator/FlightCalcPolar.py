@@ -3,6 +3,7 @@
 
 import numpy as np
 import sympy as sy
+import sys
 from rocketcea.cea_obj_w_units import CEA_Obj
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import axes3d
@@ -21,11 +22,16 @@ plt.rcParams["figure.figsize"] = (16,9)
 plt.rcParams['figure.facecolor'] = 'white'
 
 #Read csv and TOML setting files====================
-anglecsv_b = np.loadtxt('attitude_beta.csv', delimiter=',', skiprows=1) #phi thrust angle file
-anglecsv_g = np.loadtxt('attitude_gamma.csv', delimiter=',', skiprows=1) # theta thrust angle file
+settingfile = sys.argv[1] #specify setting file: settings.toml in TOML format
 
-with open('./settings.toml') as inputf:
+with open(settingfile) as inputf:
 	RSM = toml.load(inputf)
+
+betafile = RSM['CALC_SETTING']['betafile']
+gammafile = RSM['CALC_SETTING']['gammafile']
+
+anglecsv_b = np.loadtxt(betafile, delimiter=',', skiprows=1) #phi thrust angle file
+anglecsv_g = np.loadtxt(gammafile, delimiter=',', skiprows=1) # theta thrust angle file
 
 #=========================================================================================
 #SETTINGS read from setting file=========================================

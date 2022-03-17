@@ -57,3 +57,6 @@
   Casename = "Demo_run"
   timestep = 0.1
   timelimit = 500
+  #path/filename
+  betafile = "attitude_beta.csv"
+  gammafile = "attitude_gamma.csv"
