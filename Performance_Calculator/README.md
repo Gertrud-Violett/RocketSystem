@@ -20,7 +20,7 @@ gamma (theta) thrust angle history file. Enter thrust angle relative to latitudi
 ## FlightCalcPolar.py
 Main Calculation script. Results output to filename.csv based on input from settings.toml 
 ```bash
-python FlightCalcPolar.py #settingfilename.toml"
+python FlightCalcPolar.py "settingfilename.toml"
 ...       ...          ...          ...           ...  ...        ...           ...            ...            ...
  Accel: 0.476672826979712 8.719483392066946e-23 -1.0870483799769239e-07
  Stage:3,Time[s]:499.9,Weight[t]:100, Drag[kN]:0.00,Thrust[kN]:0,Alt[m]:263830, Accel[m/s2]:0.86,Velocity[m/s]:7987
